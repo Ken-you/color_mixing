@@ -42,7 +42,7 @@ class colormixingViewController: UIViewController {
     }
     
     // RGBA silder 都拉在同一個 Action ，取 silder 的數值設定在 label
-    @IBAction func ChangeSilder(_ sender: UISlider) {
+    @IBAction func ChangeSlider(_ sender: UISlider) {
         CarImage.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(alphaSlider.value))
         
         redLabel.text = String(format: "%.2f", redSlider.value)
@@ -111,7 +111,7 @@ class colormixingViewController: UIViewController {
     
     
     // 漸層 利用 CAGradientLayer() 最後加在 gradientView
-    @IBAction func gradientSilder(_ sender: UISlider) {
+    @IBAction func gradientSlider(_ sender: UISlider) {
         
         let gradientLayer = CAGradientLayer()
         
@@ -128,7 +128,7 @@ class colormixingViewController: UIViewController {
     
     
     // 圓角 
-    @IBAction func radiusSilder(_ sender: UISlider) {
+    @IBAction func radiusSlider(_ sender: UISlider) {
         CarImage.clipsToBounds = true
         CarImage.layer.cornerRadius = CGFloat(radiusSlider.value)
         gradientView.layer.cornerRadius = CGFloat(radiusSlider.value)

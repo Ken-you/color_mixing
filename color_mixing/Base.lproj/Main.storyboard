@@ -55,7 +55,7 @@
                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                 <color key="thumbTintColor" systemColor="systemRedColor"/>
                                 <connections>
-                                    <action selector="ChangeSilder:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Ws-wO-IHa"/>
+                                    <action selector="ChangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="4R2-OG-G7H"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1T-VA-gEV">
@@ -79,7 +79,7 @@
                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                 <color key="thumbTintColor" systemColor="systemGreenColor"/>
                                 <connections>
-                                    <action selector="ChangeSilder:" destination="BYZ-38-t0r" eventType="valueChanged" id="e03-gP-Mwf"/>
+                                    <action selector="ChangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="gjU-cN-dUe"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JS-xe-4Mx">
@@ -102,7 +102,7 @@
                                 <color key="minimumTrackTintColor" systemColor="systemBlueColor"/>
                                 <color key="thumbTintColor" systemColor="systemBlueColor"/>
                                 <connections>
-                                    <action selector="ChangeSilder:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z0G-7E-hLC"/>
+                                    <action selector="ChangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="pF3-YE-X3N"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r11-mT-Ldn">
@@ -133,7 +133,7 @@
                                 <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="ChangeSilder:" destination="BYZ-38-t0r" eventType="valueChanged" id="kGQ-eB-dZ3"/>
+                                    <action selector="ChangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="YKB-Ue-1gB"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="漸   層" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy7-Lw-Qob">
@@ -149,7 +149,7 @@
                                 <color key="minimumTrackTintColor" systemColor="systemGrayColor"/>
                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="gradientSilder:" destination="BYZ-38-t0r" eventType="valueChanged" id="aRF-3g-gdX"/>
+                                    <action selector="gradientSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="QAG-1o-eAB"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="圓   角" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0q3-kW-yVH">
@@ -165,7 +165,7 @@
                                 <color key="minimumTrackTintColor" systemColor="systemGrayColor"/>
                                 <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="radiusSilder:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gdy-xJ-RK1"/>
+                                    <action selector="radiusSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="B82-An-gGb"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ne7-rQ-ZdZ" userLabel="隨機配色">
