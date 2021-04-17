@@ -15,14 +15,15 @@ class colormixingViewController: UIViewController {
     // 漸層的 View
     @IBOutlet weak var gradientView: UIView!
 
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet weak var alphaSlider: UISlider!
+    @IBOutlet weak var gradientSlider: UISlider!
     
-    @IBOutlet weak var redSilder: UISlider!
-    @IBOutlet weak var greenSilder: UISlider!
-    @IBOutlet weak var blueSilder: UISlider!
-    @IBOutlet weak var alphaSilder: UISlider!
-    @IBOutlet weak var gradientSilder: UISlider!
-    @IBOutlet weak var radiusSilder: UISlider!
+    @IBOutlet weak var radiusSlider: UISlider!
     
+
     
     @IBOutlet weak var redLabel: UILabel!
     @IBOutlet weak var greenLabel: UILabel!
@@ -42,12 +43,12 @@ class colormixingViewController: UIViewController {
     
     // RGBA silder 都拉在同一個 Action ，取 silder 的數值設定在 label
     @IBAction func ChangeSilder(_ sender: UISlider) {
-        CarImage.backgroundColor = UIColor(red: CGFloat(redSilder.value), green: CGFloat(greenSilder.value), blue: CGFloat(blueSilder.value), alpha: CGFloat(alphaSilder.value))
+        CarImage.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(alphaSlider.value))
         
-        redLabel.text = String(format: "%.2f", redSilder.value)
-        greenLabel.text = String(format: "%.2f", greenSilder.value)
-        blueLabel.text = String(format: "%.2f", blueSilder.value)
-        alphaLabel.text = String(format: "%.0f", alphaSilder.value * 100 ) + "%"
+        redLabel.text = String(format: "%.2f", redSlider.value)
+        greenLabel.text = String(format: "%.2f", greenSlider.value)
+        blueLabel.text = String(format: "%.2f", blueSlider.value)
+        alphaLabel.text = String(format: "%.0f", alphaSlider.value * 100 ) + "%"
     }
     
     
@@ -55,33 +56,33 @@ class colormixingViewController: UIViewController {
     @IBAction func switchRGB(_ sender: UISwitch) {
         
         if redSwitch.isOn{
-            redSilder.isEnabled = true
-            redSilder.minimumTrackTintColor = .red
-            redSilder.thumbTintColor = .red
+            redSlider.isEnabled = true
+            redSlider.minimumTrackTintColor = .red
+            redSlider.thumbTintColor = .red
         }else{
-            redSilder.isEnabled = false
-            redSilder.minimumTrackTintColor = .gray
-            redSilder.thumbTintColor = .gray
+            redSlider.isEnabled = false
+            redSlider.minimumTrackTintColor = .gray
+            redSlider.thumbTintColor = .gray
         }
         
         if greenSwitch.isOn{
-            greenSilder.isEnabled = true
-            greenSilder.minimumTrackTintColor = .green
-            greenSilder.thumbTintColor = .green
+            greenSlider.isEnabled = true
+            greenSlider.minimumTrackTintColor = .green
+            greenSlider.thumbTintColor = .green
         }else{
-            greenSilder.isEnabled = false
-            greenSilder.minimumTrackTintColor = .gray
-            greenSilder.thumbTintColor = .gray
+            greenSlider.isEnabled = false
+            greenSlider.minimumTrackTintColor = .gray
+            greenSlider.thumbTintColor = .gray
         }
         
         if blueSwitch.isOn{
-            blueSilder.isEnabled = true
-            blueSilder.minimumTrackTintColor = .blue
-            blueSilder.thumbTintColor = .blue
+            blueSlider.isEnabled = true
+            blueSlider.minimumTrackTintColor = .blue
+            blueSlider.thumbTintColor = .blue
         }else{
-            blueSilder.isEnabled = false
-            blueSilder.minimumTrackTintColor = .gray
-            blueSilder.thumbTintColor = .gray
+            blueSlider.isEnabled = false
+            blueSlider.minimumTrackTintColor = .gray
+            blueSlider.thumbTintColor = .gray
         }
         
     }
@@ -96,13 +97,13 @@ class colormixingViewController: UIViewController {
         
         if redSwitch.isOn, greenSwitch.isOn, blueSwitch.isOn{
         
-        redSilder.setValue(randomRed, animated: true)
-        greenSilder.setValue(randomGreen, animated: true)
-        blueSilder.setValue(randomBlue, animated: true)
+        redSlider.setValue(randomRed, animated: true)
+        greenSlider.setValue(randomGreen, animated: true)
+        blueSlider.setValue(randomBlue, animated: true)
     
-        redLabel.text = String(format: "%.2f", redSilder.value)
-        greenLabel.text = String(format: "%.2f", greenSilder.value)
-        blueLabel.text = String(format: "%.2f", blueSilder.value)
+        redLabel.text = String(format: "%.2f", redSlider.value)
+        greenLabel.text = String(format: "%.2f", greenSlider.value)
+        blueLabel.text = String(format: "%.2f", blueSlider.value)
     
         CarImage.backgroundColor = UIColor(red: CGFloat(randomRed), green: CGFloat(randomGreen), blue: CGFloat(randomBlue), alpha: 1)
         }
@@ -120,7 +121,7 @@ class colormixingViewController: UIViewController {
         gradientLayer.colors = [UIColor.blue.cgColor,UIColor.red.cgColor,UIColor.yellow.cgColor]
         
         // 有三種顏色，所以要寫三種數值，其中一個改成 silder 的數值
-        gradientLayer.locations = [0.1, NSNumber(value: gradientSilder.value), 1]
+        gradientLayer.locations = [0.1, NSNumber(value: gradientSlider.value), 1]
         
         gradientView.layer.addSublayer(gradientLayer)
     }
@@ -129,8 +130,8 @@ class colormixingViewController: UIViewController {
     // 圓角 
     @IBAction func radiusSilder(_ sender: UISlider) {
         CarImage.clipsToBounds = true
-        CarImage.layer.cornerRadius = CGFloat(radiusSilder.value)
-        gradientView.layer.cornerRadius = CGFloat(radiusSilder.value)
+        CarImage.layer.cornerRadius = CGFloat(radiusSlider.value)
+        gradientView.layer.cornerRadius = CGFloat(radiusSlider.value)
     }
     
     

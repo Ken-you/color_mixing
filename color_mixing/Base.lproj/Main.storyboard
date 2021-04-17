@@ -55,7 +55,7 @@
                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                 <color key="thumbTintColor" systemColor="systemRedColor"/>
                                 <connections>
-                                    <action selector="ChangeSilder:" destination="BYZ-38-t0r" eventType="valueChanged" id="zZj-ag-Pej"/>
+                                    <action selector="ChangeSilder:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Ws-wO-IHa"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1T-VA-gEV">
@@ -255,18 +255,18 @@
                     <connections>
                         <outlet property="CarImage" destination="14k-0y-Zvb" id="HB0-VK-rOg"/>
                         <outlet property="alphaLabel" destination="05f-gt-hLk" id="jvt-Ly-FK5"/>
-                        <outlet property="alphaSilder" destination="MxC-ve-qj6" id="USf-1f-QjI"/>
+                        <outlet property="alphaSlider" destination="MxC-ve-qj6" id="NJK-OT-ATB"/>
                         <outlet property="blueLabel" destination="r11-mT-Ldn" id="oBe-aC-O5K"/>
-                        <outlet property="blueSilder" destination="SsJ-ev-0ve" id="suj-fb-Pqr"/>
+                        <outlet property="blueSlider" destination="SsJ-ev-0ve" id="Jiw-JW-4RA"/>
                         <outlet property="blueSwitch" destination="HxU-ue-GPp" id="ANi-RA-wbk"/>
-                        <outlet property="gradientSilder" destination="z0o-r9-Inq" id="Jgm-fp-LiH"/>
+                        <outlet property="gradientSlider" destination="z0o-r9-Inq" id="SRq-xO-bGh"/>
                         <outlet property="gradientView" destination="1CR-e3-tE6" id="aXT-9S-izg"/>
                         <outlet property="greenLabel" destination="3JS-xe-4Mx" id="ZcW-m4-oiz"/>
-                        <outlet property="greenSilder" destination="PmQ-6B-nKo" id="woB-tb-iCc"/>
+                        <outlet property="greenSlider" destination="PmQ-6B-nKo" id="Gus-4T-aRL"/>
                         <outlet property="greenSwitch" destination="dLr-tp-qSD" id="MdB-Eq-Edp"/>
-                        <outlet property="radiusSilder" destination="Dxy-Qq-mI6" id="gBp-gt-1Jm"/>
+                        <outlet property="radiusSlider" destination="Dxy-Qq-mI6" id="nOr-dN-Wsw"/>
                         <outlet property="redLabel" destination="u1T-VA-gEV" id="DGu-7z-exV"/>
-                        <outlet property="redSilder" destination="YQe-Bo-uF3" id="ZnF-HH-QVO"/>
+                        <outlet property="redSlider" destination="YQe-Bo-uF3" id="fUX-54-Pup"/>
                         <outlet property="redSwitch" destination="7ZD-f4-mos" id="8kb-5q-vzz"/>
                     </connections>
                 </viewController>
