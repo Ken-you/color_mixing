@@ -41,7 +41,7 @@ class colormixingViewController: UIViewController {
         
     }
     
-    // RGBA silder 都拉在同一個 Action ，取 silder 的數值設定在 label
+    // RGBA slider 都拉在同一個 Action ，取 slider 的數值設定在 label
     @IBAction func ChangeSlider(_ sender: UISlider) {
         CarImage.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: CGFloat(alphaSlider.value))
         
@@ -52,7 +52,7 @@ class colormixingViewController: UIViewController {
     }
     
     
-    // RGB switch 開關 除了設定 silder 可不可以編輯也設定顏色
+    // RGB switch 開關 除了設定 slider 可不可以編輯也設定顏色
     @IBAction func switchRGB(_ sender: UISwitch) {
         
         if redSwitch.isOn{
@@ -120,7 +120,7 @@ class colormixingViewController: UIViewController {
         // 設定三種顏色
         gradientLayer.colors = [UIColor.blue.cgColor,UIColor.red.cgColor,UIColor.yellow.cgColor]
         
-        // 有三種顏色，所以要寫三種數值，其中一個改成 silder 的數值
+        // 有三種顏色，所以要寫三種數值，其中一個改成 slider 的數值
         gradientLayer.locations = [0.1, NSNumber(value: gradientSlider.value), 1]
         
         gradientView.layer.addSublayer(gradientLayer)
